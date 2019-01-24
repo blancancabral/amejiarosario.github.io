@@ -37,7 +37,7 @@ In this section, we are going to cover how to create Node modules and each one o
 
 # Require
 
-`require` are used to consume modules. It allows you to include modules into your programs. You can include built-in core Node.js modules, community-based modules (node_modules) and local modules.
+`require` are used to consume modules. It allows you to include modules in your programs. You can include built-in core Node.js modules, community-based modules (node_modules) and local modules.
 
 Let's say we want to read a file from the filesystem. Node has a core module called 'fs':
 
@@ -54,7 +54,7 @@ As you can see, we imported the "fs" module into our program. It allows us to an
 
 Require will look for files in the following order:
 
-1. Built-in core Node.js modules (like `fs`)
+1. Built-in the core Node.js modules (like `fs`)
 2. Modules in `node_modules` folder.
 3. If the module name has a `./`, `/` or `../`, it will look for the directory/file in the given path. It matches the extensions: `*.js`, `*.json` and `*.node`.
 
@@ -65,10 +65,10 @@ Require will look for files in the following order:
 ```javascript circle.js
 const PI = 3.14159265359;
 exports.area = (radius) => Math.pow(radius, 2) * PI;
-exports.circunference = (radius) => 2 * radius * PI;
+exports.circumference = (radius) => 2 * radius * PI;
 ```
 
-In the code below, we are exporting the `area` function. We defined the constant PI but this is only accessible within the module. Only the elements associated to `exports` are accessible outside the module.
+In the code below, we are exporting the `area` function. We defined the constant PI but this is only accessible within the module. Only the elements associated with `exports` are accessible outside the module.
 
 So, we can consume it using `require` in another file like follows:
 
@@ -85,7 +85,7 @@ Noticed that this time we prefix the module name with './'. That indicates that 
 
 # Module Wrapper
 
-You can think of each module as self-contained function like the following one:
+You can think of each module as a self-contained function like the following one:
 
 ```javascript Module Wrapper
 (function (exports, require, module, __filename, __dirname) {
@@ -96,7 +96,7 @@ You can think of each module as self-contained function like the following one:
 });
 ```
 
-We have already covered `exports` and `require`. Notice the relationship between `module.exports` and `exports`. They points to the same reference. However, if you assign something directly to `exports` you will break its link to `module.exports`. More on that in the next section.
+We have already covered `exports` and `require`. Notice the relationship between `module.exports` and `exports`. They point to the same reference. However, if you assign something directly to `exports` you will break its link to `module.exports`. More on that in the next section.
 
 For our convenience `__filename` and `__dirname` are defined. They provide the full path to the current file and directory. The latter excludes the filename and just print out the directory path.
 
