@@ -25,7 +25,7 @@ Modules are a key concept to understand Node.js projects. We cover Node modules:
 
 <!-- more -->
 
-Node modules allow you to write reusable code. You can include your own modules into another module. Using Node Package Manager (NPM), you can publish your module to the community. Also, NPM enables you to reuse modules made by other developers using.
+Node modules allow you to write reusable code. You can include your own modules into another one. Using Node Package Manager (NPM), you will be able to publish your module to the community. Also, NPM enables you to use again modules made by other developers.
 
 In this section, we are going to cover how to create Node modules and each one of its components:
 
@@ -37,7 +37,7 @@ In this section, we are going to cover how to create Node modules and each one o
 
 # Require
 
-`require` are used to consume modules. It allows you to include modules into your programs. You can include built-in core Node.js modules, community-based modules (node_modules) and local modules.
+`require` are used to consume modules. It allows you to include them into your programs. You can add built-in core Node.js modules, community-based modules (node_modules) and local modules.
 
 Let's say we want to read a file from the filesystem. Node has a core module called 'fs':
 
@@ -50,7 +50,7 @@ fs.readFile('./file.txt', 'utf-8', (err, data) => {
 });
 {% endcodeblock %}
 
-As you can see, we imported the "fs" module into our program. It allows us to any function attached to it, like "readFile".
+As you can see, we imported the "fs" module into our program. It allows us to (Use?) any function attached to it, like "readFile".
 
 Require will look for files in the following order:
 
