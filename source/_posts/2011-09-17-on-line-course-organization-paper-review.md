@@ -6,7 +6,7 @@ updated: 1316299024000
 comments: true
 pageviews__total: 292
 pageviews__recent: 1
-pageviews__avg_time: 212
+pageviews__avg_time: 177
 tutorial__order: 0
 # categories: [paper review, focused crawling, metadata extraction, learning object management, ontology, e-learning]
 ---

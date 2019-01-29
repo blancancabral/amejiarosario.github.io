@@ -6,7 +6,7 @@ updated: 1325695584000
 comments: true
 pageviews__total: 441
 pageviews__recent: 1
-pageviews__avg_time: 129
+pageviews__avg_time: 142
 tutorial__order: 0
 #categories: [concentration, procrastination, attention]
 ---

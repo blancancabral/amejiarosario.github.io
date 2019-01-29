@@ -6,7 +6,7 @@ updated: 1315369148000
 comments: true
 pageviews__total: 373
 pageviews__recent: 1
-pageviews__avg_time: 26
+pageviews__avg_time: 27
 tutorial__order: 0
 tags:
   - java

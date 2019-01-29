@@ -4,7 +4,7 @@ title: eLearning 2.0 and Social, Practice-Oriented Communities to Improve Knowle
 created: 1317137273000
 updated: 1317137273000
 comments: true
-pageviews__total: 42
+pageviews__total: 43
 pageviews__recent: 1
 pageviews__avg_time: 22
 tutorial__order: 0
