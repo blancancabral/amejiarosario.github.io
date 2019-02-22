@@ -102,6 +102,8 @@ ga('send', 'pageview');
               
                 <a href="/#trending-posts" class="animation--radial-out" id="Trending" onclick="track('/#trending-posts', 'menu', true)">Trending</a>
               
+                <a href="/#popular-posts" class="animation--radial-out" id="Popular" onclick="track('/#popular-posts', 'menu', true)">Popular</a>
+              
                 <a href="/#about" class="animation--radial-out" id="About" onclick="track('/#about', 'menu', true)">About</a>
               
                 <a href="/blog" class="animation--radial-out" id="Blog" onclick="track('/blog', 'menu', true)">Blog</a>
@@ -230,6 +232,8 @@ ga('send', 'pageview');
         
           <a href="/#trending-posts" class="animation--underline-from-center">Trending</a>
         
+          <a href="/#popular-posts" class="animation--underline-from-center">Popular</a>
+        
           <a href="/#about" class="animation--underline-from-center">About</a>
         
           <a href="/blog" class="animation--underline-from-center">Blog</a>
@@ -289,14 +293,14 @@ Most professions nowadays involve a certain degree of stress. We have deadlines,
     <div class="muted">
       <span title="Last time this post was updated">
         <i class="fa fa-calendar" aria-hidden="true"></i>
-        Last update
+        Last updated
         <time datetime="2019-01-04T14:31:00.000Z" itemprop="dateUpdated">January 4th 2019</time>
       </span>
 
       
         <span class="m-x-2" title="Pageviews">
           <i class="fa fa-eye" aria-hidden="true"></i>
-          0.3k
+          0.6k
         </span>
       
 
@@ -334,13 +338,14 @@ Most professions nowadays involve a certain degree of stress. We have deadlines,
 <a id="more"></a>
 <h1 id="Background">Background<a href="#Background" class="headerlink" title="Background"></a></h1><p>There was a time in my life, back in 2015, where I went through severe stress crisis. I was juggling too many things at once: writing a book, interviewing in the USA for new jobs, and getting a work visa, and planning a wedding while keeping up with a full-time job and also the sole programmer on two startups. It was the busiest time of my life, and my health suffered a lot! I dreamt about source code. Some nights I couldn’t sleep, so I worked instead. I went to the ER multiple times with heart palpitations. I knew I could not keep living in that way. I’ve been experimenting with what helps and what not. This post is a compilation of the ones that helped.</p>
 <h1 id="Ideas-to-handle-stress">Ideas to handle stress<a href="#Ideas-to-handle-stress" class="headerlink" title="Ideas to handle stress"></a></h1><p>I’ve been incorporating the following techniques and it had helped me a lot to cope with stress! Hope they can help you, too!</p>
-<h2 id="Breaks-⏲">Breaks ⏲<a href="#Breaks-⏲" class="headerlink" title="Breaks ⏲"></a></h2><p>Have you noticed that after a long time sitting your energy levels and concentration start to drop?</p>
+<h2 id="Move-🚶‍♂️">Move 🚶‍♂️<a href="#Move-🚶‍♂️" class="headerlink" title="Move 🚶‍♂️"></a></h2><p>Have you noticed that after a long time sitting your energy levels and concentration start to drop?</p>
 <p>Taking a break to get some movements is great way to solve this issue!</p>
 <blockquote>
 <p>Movement =&gt; Energy</p>
 </blockquote>
 <p><strong>Take a 5 minutes break after 25 minutes of work</strong>. You can also do 50/10 minutes of work/break. What matters is that you get some rest to move around and take a deep breath.</p>
 <p>The 25/5 minutes of work/break is also known as the Pomodoro technique. There are many apps that I have used to remind me to take a break. As simple as it sounds, it’s easy to get carried away when working on a computer and lose the notion of time.</p>
+<p><strong>Note</strong>: sitting for long time doesn’t get automatically fixed with working out after work. You still have to try walking around at least every hour so your body don’t suffer.</p>
 <details>
   <summary>Apps I’ve used…</summary>
 
@@ -553,7 +558,7 @@ Tim Ferris - https://tim.blog/2015/01/15/morning-pages/
 http://www.gurl.com/2016/09/08/tips-on-how-to-make-the-most-perfect-bullet-journal-ideas
 -->
 <details>
-  <summary>Tools I used…</summary>
+  <summary>Tools I’ve used…</summary>
 
   <ul>
     <li>
@@ -626,7 +631,7 @@ https://support.google.com/affiliate/answer/7188084?hl=en&ref_topic=7477733
       </div>
 
       <!-- after post -->
-      <div>
+      <div class="hidden-mobile-down">
         <h3>Now, your turn!</h3>
         Thanks for reading this far. Here are some things you can do next:
         <ul>
@@ -648,9 +653,25 @@ https://support.google.com/affiliate/answer/7188084?hl=en&ref_topic=7477733
         </ul>
       </div>
 
+      <div class="hidden-mobile-up">
+        <a href="https://gum.co/dsajs">
+          <!-- <img src="/images/data-structure-algorithms-javascript-presell.jpg" alt="Data Structure and Algorithms in JavaScript eBook"> -->
+          <img src="/images/data-structure-algorithms-banner.jpg" alt="Data Structure and Algorithms in JavaScript eBook">
+        </a>
+      </div>
+
       <!-- Next and previous posts -->
       
         <div class="article-nav m-y-4">
+          
+            <a href="/blog/2019/01/24/I-got-hacked-and-It-changed-my-life-on-security-tips/" class="article-nav-newer">
+              <strong class="article-nav-caption"><i class="fa fa-chevron-left"></i> newer</strong>
+              <div class="article-nav-title">
+                
+                  I got Hacked and It changed my life
+                
+              </div>
+            </a>
           
           
             <a href="/blog/2018/08/04/Vue-js-Tutorial-for-beginners-Create-a-Todo-App/" class="article-nav-older">
@@ -704,7 +725,10 @@ https://support.google.com/affiliate/answer/7188084?hl=en&ref_topic=7477733
           <!-- Adrian Mejia Bio -->
           <section class="bio-box">
   <img class="m-a-1 not-scaled" src="/images/adrianmejia-small.png" alt="Adrian Mejia">
-  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston. Currently working at Cisco as a Software Engineer. Adrian enjoys writing posts about programming and technology. Also, he likes to travel ✈️ and biking 🚴‍. Find our more <a href="/#about">here</a>.</p>
+  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston.
+    Currently working at Cisco as a Software Engineer.
+    Adrian enjoys writing posts about programming and technology.
+    Also, he likes to travel ✈️ and biking 🚴‍. Find out more <a href="/#about">here</a>.</p>
 </section>
 
 
@@ -771,7 +795,9 @@ https://support.google.com/affiliate/answer/7188084?hl=en&ref_topic=7477733
 
           
             <h3 class="toc-title">Contents</h3>
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Background"><span class="toc-number">1.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ideas-to-handle-stress"><span class="toc-number">2.</span> <span class="toc-text">Ideas to handle stress</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Breaks-⏲"><span class="toc-number">2.1.</span> <span class="toc-text">Breaks ⏲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Brainstorm-🧠"><span class="toc-number">2.2.</span> <span class="toc-text">Brainstorm 🧠</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Subtask-✌️"><span class="toc-number">2.3.</span> <span class="toc-text">Subtask ✌️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Prioritize-🎯"><span class="toc-number">2.4.</span> <span class="toc-text">Prioritize 🎯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ask-🗣"><span class="toc-number">2.5.</span> <span class="toc-text">Ask 🗣</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Drink-🚰"><span class="toc-number">2.6.</span> <span class="toc-text">Drink 🚰</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nourish-🥦"><span class="toc-number">2.7.</span> <span class="toc-text">Nourish 🥦</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Stretch-🙆‍♀️"><span class="toc-number">2.8.</span> <span class="toc-text">Stretch 🙆‍♀️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Workout-🏋️‍♀️"><span class="toc-number">2.9.</span> <span class="toc-text">Workout 🏋️‍♀️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Breath-💨"><span class="toc-number">2.10.</span> <span class="toc-text">Breath 💨</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Meditate-🧘‍♀️"><span class="toc-number">2.11.</span> <span class="toc-text">Meditate 🧘‍♀️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Play-🎮"><span class="toc-number">2.12.</span> <span class="toc-text">Play 🎮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Write-✍️"><span class="toc-number">2.13.</span> <span class="toc-text">Write ✍️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sleep-😴"><span class="toc-number">2.14.</span> <span class="toc-text">Sleep 😴</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Stress-management-for-Software-Developers"><span class="toc-number">3.</span> <span class="toc-text">Stress management for Software Developers</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Information-overload-🤯"><span class="toc-number">3.1.</span> <span class="toc-text">Information overload 🤯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Testing-🐞"><span class="toc-number">3.2.</span> <span class="toc-text">Testing 🐞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Refactoring-🛠"><span class="toc-number">3.3.</span> <span class="toc-text">Refactoring 🛠</span></a></li></ol></li></ol>
+            <div>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Background"><span class="toc-number">1.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ideas-to-handle-stress"><span class="toc-number">2.</span> <span class="toc-text">Ideas to handle stress</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Move-🚶‍♂️"><span class="toc-number">2.1.</span> <span class="toc-text">Move 🚶‍♂️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Brainstorm-🧠"><span class="toc-number">2.2.</span> <span class="toc-text">Brainstorm 🧠</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Subtask-✌️"><span class="toc-number">2.3.</span> <span class="toc-text">Subtask ✌️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Prioritize-🎯"><span class="toc-number">2.4.</span> <span class="toc-text">Prioritize 🎯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ask-🗣"><span class="toc-number">2.5.</span> <span class="toc-text">Ask 🗣</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Drink-🚰"><span class="toc-number">2.6.</span> <span class="toc-text">Drink 🚰</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nourish-🥦"><span class="toc-number">2.7.</span> <span class="toc-text">Nourish 🥦</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Stretch-🙆‍♀️"><span class="toc-number">2.8.</span> <span class="toc-text">Stretch 🙆‍♀️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Workout-🏋️‍♀️"><span class="toc-number">2.9.</span> <span class="toc-text">Workout 🏋️‍♀️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Breath-💨"><span class="toc-number">2.10.</span> <span class="toc-text">Breath 💨</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Meditate-🧘‍♀️"><span class="toc-number">2.11.</span> <span class="toc-text">Meditate 🧘‍♀️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Play-🎮"><span class="toc-number">2.12.</span> <span class="toc-text">Play 🎮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Write-✍️"><span class="toc-number">2.13.</span> <span class="toc-text">Write ✍️</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sleep-😴"><span class="toc-number">2.14.</span> <span class="toc-text">Sleep 😴</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Stress-management-for-Software-Developers"><span class="toc-number">3.</span> <span class="toc-text">Stress management for Software Developers</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Information-overload-🤯"><span class="toc-number">3.1.</span> <span class="toc-text">Information overload 🤯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Testing-🐞"><span class="toc-number">3.2.</span> <span class="toc-text">Testing 🐞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Refactoring-🛠"><span class="toc-number">3.3.</span> <span class="toc-text">Refactoring 🛠</span></a></li></ol></li></ol>
+            </div>
 
             <!-- 300x600 -->
             <!---->
@@ -779,6 +805,11 @@ https://support.google.com/affiliate/answer/7188084?hl=en&ref_topic=7477733
             <div class="hidden-mobile-down">
               <!-- last working ads -->
               <!-- <script data-cfasync="false" type="text/javascript" src="//www.eboundservices.com/ads/dfp/160x600_responsive.js"></script> -->
+
+              <a href="https://gum.co/dsajs" target="_blank">
+                <!-- <img src="/images/data-structure-algorithms-javascript-presell.jpg" alt="Data Structure and Algorithms in JavaScript eBook"> -->
+                <img src="/images/data-structure-algorithms-banner.jpg" alt="Data Structure and Algorithms in JavaScript eBook">
+              </a>
             </div>
           
         </div>
@@ -817,8 +848,8 @@ https://support.google.com/affiliate/answer/7188084?hl=en&ref_topic=7477733
       <div class="container">
         <div class="p-y-2">
           &copy; 2019 <a href="http://adrianmejia.com">Adrian Mejia</a>
-          <span class="muted m-x-4" title="Tue Jan 22 2019 16:44:53 GMT-0500 (Eastern Standard Time)">
-            v.plr5qt
+          <span class="muted m-x-4" title="Thu Feb 21 2019 19:18:42 GMT-0500 (Eastern Standard Time)">
+            v.pnawv6
           </span>
         </div>
       </div>
@@ -836,6 +867,9 @@ https://support.google.com/affiliate/answer/7188084?hl=en&ref_topic=7477733
     
 
     
+      <script src="https://gumroad.com/js/gumroad.js"></script>
+
+      <!-- adthis -->
       <script type="text/javascript">
         var addthis_config = {
           data_ga_property: 'UA-24183929-4',
@@ -843,6 +877,7 @@ https://support.google.com/affiliate/answer/7188084?hl=en&ref_topic=7477733
         };
       </script>
       <script async defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-579cb31b46e2f7e6"></script>
+
       <script src="/js/posts.js"></script>    
   </body>
 </html>

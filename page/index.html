@@ -101,6 +101,8 @@ ga('send', 'pageview');
               
                 <a href="/#trending-posts" class="animation--radial-out" id="Trending" onclick="track('/#trending-posts', 'menu', true)">Trending</a>
               
+                <a href="/#popular-posts" class="animation--radial-out" id="Popular" onclick="track('/#popular-posts', 'menu', true)">Popular</a>
+              
                 <a href="/#about" class="animation--radial-out" id="About" onclick="track('/#about', 'menu', true)">About</a>
               
                 <a href="/blog" class="animation--radial-out" id="Blog" onclick="track('/blog', 'menu', true)">Blog</a>
@@ -229,6 +231,8 @@ ga('send', 'pageview');
         
           <a href="/#trending-posts" class="animation--underline-from-center">Trending</a>
         
+          <a href="/#popular-posts" class="animation--underline-from-center">Popular</a>
+        
           <a href="/#about" class="animation--underline-from-center">About</a>
         
           <a href="/blog" class="animation--underline-from-center">Blog</a>
@@ -280,7 +284,7 @@ ga('send', 'pageview');
     <div class="muted">
       <span title="Last time this post was updated">
         <i class="fa fa-calendar" aria-hidden="true"></i>
-        Last update
+        Last updated
         <time datetime="2018-10-22T03:14:07.617Z" itemprop="dateUpdated">October 21st 2018</time>
       </span>
 
@@ -310,7 +314,7 @@ ga('send', 'pageview');
       </div>
 
       <!-- after post -->
-      <div>
+      <div class="hidden-mobile-down">
         <h3>Now, your turn!</h3>
         Thanks for reading this far. Here are some things you can do next:
         <ul>
@@ -330,6 +334,13 @@ ga('send', 'pageview');
             <a target="_blank" href="https://www.patreon.com/amejiarosario">Patreon</a>.
           </li>
         </ul>
+      </div>
+
+      <div class="hidden-mobile-up">
+        <a href="https://gum.co/dsajs">
+          <!-- <img src="/images/data-structure-algorithms-javascript-presell.jpg" alt="Data Structure and Algorithms in JavaScript eBook"> -->
+          <img src="/images/data-structure-algorithms-banner.jpg" alt="Data Structure and Algorithms in JavaScript eBook">
+        </a>
       </div>
 
       <!-- Next and previous posts -->
@@ -378,7 +389,10 @@ ga('send', 'pageview');
           <!-- Adrian Mejia Bio -->
           <section class="bio-box">
   <img class="m-a-1 not-scaled" src="/images/adrianmejia-small.png" alt="Adrian Mejia">
-  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston. Currently working at Cisco as a Software Engineer. Adrian enjoys writing posts about programming and technology. Also, he likes to travel ✈️ and biking 🚴‍. Find our more <a href="/#about">here</a>.</p>
+  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston.
+    Currently working at Cisco as a Software Engineer.
+    Adrian enjoys writing posts about programming and technology.
+    Also, he likes to travel ✈️ and biking 🚴‍. Find out more <a href="/#about">here</a>.</p>
 </section>
 
 
@@ -480,8 +494,8 @@ ga('send', 'pageview');
       <div class="container">
         <div class="p-y-2">
           &copy; 2019 <a href="http://adrianmejia.com">Adrian Mejia</a>
-          <span class="muted m-x-4" title="Tue Jan 22 2019 16:44:53 GMT-0500 (Eastern Standard Time)">
-            v.plr5qt
+          <span class="muted m-x-4" title="Thu Feb 21 2019 19:18:42 GMT-0500 (Eastern Standard Time)">
+            v.pnawv6
           </span>
         </div>
       </div>

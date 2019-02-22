@@ -101,6 +101,8 @@ ga('send', 'pageview');
               
                 <a href="/#trending-posts" class="animation--radial-out" id="Trending" onclick="track('/#trending-posts', 'menu', true)">Trending</a>
               
+                <a href="/#popular-posts" class="animation--radial-out" id="Popular" onclick="track('/#popular-posts', 'menu', true)">Popular</a>
+              
                 <a href="/#about" class="animation--radial-out" id="About" onclick="track('/#about', 'menu', true)">About</a>
               
                 <a href="/blog" class="animation--radial-out" id="Blog" onclick="track('/blog', 'menu', true)">Blog</a>
@@ -229,6 +231,8 @@ ga('send', 'pageview');
         
           <a href="/#trending-posts" class="animation--underline-from-center">Trending</a>
         
+          <a href="/#popular-posts" class="animation--underline-from-center">Popular</a>
+        
           <a href="/#about" class="animation--underline-from-center">About</a>
         
           <a href="/blog" class="animation--underline-from-center">Blog</a>
@@ -287,14 +291,14 @@ ga('send', 'pageview');
     <div class="muted">
       <span title="Last time this post was updated">
         <i class="fa fa-calendar" aria-hidden="true"></i>
-        Last update
+        Last updated
         <time datetime="2016-10-25T16:02:34.000Z" itemprop="dateUpdated">October 25th 2016</time>
       </span>
 
       
         <span class="m-x-2" title="Pageviews">
           <i class="fa fa-eye" aria-hidden="true"></i>
-          53.5k
+          55.9k
         </span>
       
 
@@ -518,7 +522,7 @@ All JavaScript objects inherit their methods and properties from their prototype
       </div>
 
       <!-- after post -->
-      <div>
+      <div class="hidden-mobile-down">
         <h3>Now, your turn!</h3>
         Thanks for reading this far. Here are some things you can do next:
         <ul>
@@ -538,6 +542,13 @@ All JavaScript objects inherit their methods and properties from their prototype
             <a target="_blank" href="https://www.patreon.com/amejiarosario">Patreon</a>.
           </li>
         </ul>
+      </div>
+
+      <div class="hidden-mobile-up">
+        <a href="https://gum.co/dsajs">
+          <!-- <img src="/images/data-structure-algorithms-javascript-presell.jpg" alt="Data Structure and Algorithms in JavaScript eBook"> -->
+          <img src="/images/data-structure-algorithms-banner.jpg" alt="Data Structure and Algorithms in JavaScript eBook">
+        </a>
       </div>
 
       <!-- Next and previous posts -->
@@ -605,7 +616,10 @@ All JavaScript objects inherit their methods and properties from their prototype
           <!-- Adrian Mejia Bio -->
           <section class="bio-box">
   <img class="m-a-1 not-scaled" src="/images/adrianmejia-small.png" alt="Adrian Mejia">
-  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston. Currently working at Cisco as a Software Engineer. Adrian enjoys writing posts about programming and technology. Also, he likes to travel ✈️ and biking 🚴‍. Find our more <a href="/#about">here</a>.</p>
+  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston.
+    Currently working at Cisco as a Software Engineer.
+    Adrian enjoys writing posts about programming and technology.
+    Also, he likes to travel ✈️ and biking 🚴‍. Find out more <a href="/#about">here</a>.</p>
 </section>
 
 
@@ -672,7 +686,9 @@ All JavaScript objects inherit their methods and properties from their prototype
 
           
             <h3 class="toc-title">Contents</h3>
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript-History"><span class="toc-number">1.</span> <span class="toc-text">JavaScript History</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Browsers-Support"><span class="toc-number">2.</span> <span class="toc-text">Browsers Support</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Core-ES6-Features"><span class="toc-number">3.</span> <span class="toc-text">Core ES6 Features</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Block-scope-variables"><span class="toc-number">3.1.</span> <span class="toc-text">Block scope variables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Template-Literals"><span class="toc-number">3.2.</span> <span class="toc-text">Template Literals</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Multi-line-strings"><span class="toc-number">3.3.</span> <span class="toc-text">Multi-line strings</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Destructuring-Assignment"><span class="toc-number">3.4.</span> <span class="toc-text">Destructuring Assignment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Classes-and-Objects"><span class="toc-number">3.5.</span> <span class="toc-text">Classes and Objects</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Inheritance"><span class="toc-number">3.6.</span> <span class="toc-text">Inheritance</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Native-Promises"><span class="toc-number">3.7.</span> <span class="toc-text">Native Promises</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arrow-functions"><span class="toc-number">3.8.</span> <span class="toc-text">Arrow functions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#For…of"><span class="toc-number">3.9.</span> <span class="toc-text">For…of</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Default-parameters"><span class="toc-number">3.10.</span> <span class="toc-text">Default parameters</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rest-parameters"><span class="toc-number">3.11.</span> <span class="toc-text">Rest parameters</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spread-operator"><span class="toc-number">3.12.</span> <span class="toc-text">Spread operator</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number">4.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+            <div>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript-History"><span class="toc-number">1.</span> <span class="toc-text">JavaScript History</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Browsers-Support"><span class="toc-number">2.</span> <span class="toc-text">Browsers Support</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Core-ES6-Features"><span class="toc-number">3.</span> <span class="toc-text">Core ES6 Features</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Block-scope-variables"><span class="toc-number">3.1.</span> <span class="toc-text">Block scope variables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Template-Literals"><span class="toc-number">3.2.</span> <span class="toc-text">Template Literals</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Multi-line-strings"><span class="toc-number">3.3.</span> <span class="toc-text">Multi-line strings</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Destructuring-Assignment"><span class="toc-number">3.4.</span> <span class="toc-text">Destructuring Assignment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Classes-and-Objects"><span class="toc-number">3.5.</span> <span class="toc-text">Classes and Objects</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Inheritance"><span class="toc-number">3.6.</span> <span class="toc-text">Inheritance</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Native-Promises"><span class="toc-number">3.7.</span> <span class="toc-text">Native Promises</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arrow-functions"><span class="toc-number">3.8.</span> <span class="toc-text">Arrow functions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#For…of"><span class="toc-number">3.9.</span> <span class="toc-text">For…of</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Default-parameters"><span class="toc-number">3.10.</span> <span class="toc-text">Default parameters</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rest-parameters"><span class="toc-number">3.11.</span> <span class="toc-text">Rest parameters</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spread-operator"><span class="toc-number">3.12.</span> <span class="toc-text">Spread operator</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number">4.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+            </div>
 
             <!-- 300x600 -->
             <!---->
@@ -680,6 +696,11 @@ All JavaScript objects inherit their methods and properties from their prototype
             <div class="hidden-mobile-down">
               <!-- last working ads -->
               <!-- <script data-cfasync="false" type="text/javascript" src="//www.eboundservices.com/ads/dfp/160x600_responsive.js"></script> -->
+
+              <a href="https://gum.co/dsajs" target="_blank">
+                <!-- <img src="/images/data-structure-algorithms-javascript-presell.jpg" alt="Data Structure and Algorithms in JavaScript eBook"> -->
+                <img src="/images/data-structure-algorithms-banner.jpg" alt="Data Structure and Algorithms in JavaScript eBook">
+              </a>
             </div>
           
         </div>
@@ -718,8 +739,8 @@ All JavaScript objects inherit their methods and properties from their prototype
       <div class="container">
         <div class="p-y-2">
           &copy; 2019 <a href="http://adrianmejia.com">Adrian Mejia</a>
-          <span class="muted m-x-4" title="Tue Jan 22 2019 16:44:53 GMT-0500 (Eastern Standard Time)">
-            v.plr5qt
+          <span class="muted m-x-4" title="Thu Feb 21 2019 19:18:42 GMT-0500 (Eastern Standard Time)">
+            v.pnawv6
           </span>
         </div>
       </div>
@@ -737,6 +758,9 @@ All JavaScript objects inherit their methods and properties from their prototype
     
 
     
+      <script src="https://gumroad.com/js/gumroad.js"></script>
+
+      <!-- adthis -->
       <script type="text/javascript">
         var addthis_config = {
           data_ga_property: 'UA-24183929-4',
@@ -744,6 +768,7 @@ All JavaScript objects inherit their methods and properties from their prototype
         };
       </script>
       <script async defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-579cb31b46e2f7e6"></script>
+
       <script src="/js/posts.js"></script>    
   </body>
 </html>

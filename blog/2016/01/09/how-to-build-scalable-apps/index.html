@@ -102,6 +102,8 @@ ga('send', 'pageview');
               
                 <a href="/#trending-posts" class="animation--radial-out" id="Trending" onclick="track('/#trending-posts', 'menu', true)">Trending</a>
               
+                <a href="/#popular-posts" class="animation--radial-out" id="Popular" onclick="track('/#popular-posts', 'menu', true)">Popular</a>
+              
                 <a href="/#about" class="animation--radial-out" id="About" onclick="track('/#about', 'menu', true)">About</a>
               
                 <a href="/blog" class="animation--radial-out" id="Blog" onclick="track('/blog', 'menu', true)">Blog</a>
@@ -230,6 +232,8 @@ ga('send', 'pageview');
         
           <a href="/#trending-posts" class="animation--underline-from-center">Trending</a>
         
+          <a href="/#popular-posts" class="animation--underline-from-center">Popular</a>
+        
           <a href="/#about" class="animation--underline-from-center">About</a>
         
           <a href="/blog" class="animation--underline-from-center">Blog</a>
@@ -289,7 +293,7 @@ The Twelve steps are a compilation of guidelines to ensure apps can scale up wit
     <div class="muted">
       <span title="Last time this post was updated">
         <i class="fa fa-calendar" aria-hidden="true"></i>
-        Last update
+        Last updated
         <time datetime="2016-01-09T15:43:27.000Z" itemprop="dateUpdated">January 9th 2016</time>
       </span>
 
@@ -418,7 +422,7 @@ The Twelve steps are a compilation of guidelines to ensure apps can scale up wit
       </div>
 
       <!-- after post -->
-      <div>
+      <div class="hidden-mobile-down">
         <h3>Now, your turn!</h3>
         Thanks for reading this far. Here are some things you can do next:
         <ul>
@@ -438,6 +442,13 @@ The Twelve steps are a compilation of guidelines to ensure apps can scale up wit
             <a target="_blank" href="https://www.patreon.com/amejiarosario">Patreon</a>.
           </li>
         </ul>
+      </div>
+
+      <div class="hidden-mobile-up">
+        <a href="https://gum.co/dsajs">
+          <!-- <img src="/images/data-structure-algorithms-javascript-presell.jpg" alt="Data Structure and Algorithms in JavaScript eBook"> -->
+          <img src="/images/data-structure-algorithms-banner.jpg" alt="Data Structure and Algorithms in JavaScript eBook">
+        </a>
       </div>
 
       <!-- Next and previous posts -->
@@ -505,7 +516,10 @@ The Twelve steps are a compilation of guidelines to ensure apps can scale up wit
           <!-- Adrian Mejia Bio -->
           <section class="bio-box">
   <img class="m-a-1 not-scaled" src="/images/adrianmejia-small.png" alt="Adrian Mejia">
-  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston. Currently working at Cisco as a Software Engineer. Adrian enjoys writing posts about programming and technology. Also, he likes to travel ✈️ and biking 🚴‍. Find our more <a href="/#about">here</a>.</p>
+  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston.
+    Currently working at Cisco as a Software Engineer.
+    Adrian enjoys writing posts about programming and technology.
+    Also, he likes to travel ✈️ and biking 🚴‍. Find out more <a href="/#about">here</a>.</p>
 </section>
 
 
@@ -572,7 +586,9 @@ The Twelve steps are a compilation of guidelines to ensure apps can scale up wit
 
           
             <h3 class="toc-title">Contents</h3>
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#One-codebase-per-app-multiple-deployments"><span class="toc-number">1.</span> <span class="toc-text">One codebase per app, multiple deployments</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Declare-and-isolate-dependencies"><span class="toc-number">2.</span> <span class="toc-text">Declare and isolate dependencies</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Store-the-config-in-the-environment"><span class="toc-number">3.</span> <span class="toc-text">Store the config in the environment</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Swappable-local-and-third-party-services"><span class="toc-number">4.</span> <span class="toc-text">Swappable local and third party services</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Build-and-runtime"><span class="toc-number">5.</span> <span class="toc-text">Build and runtime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Execute-the-app-as-share-nothing-stateless-processes"><span class="toc-number">6.</span> <span class="toc-text">Execute the app as share-nothing stateless processes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Export-services-via-port-binding"><span class="toc-number">7.</span> <span class="toc-text">Export services via port binding</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scale-out-the-app-horizontally"><span class="toc-number">8.</span> <span class="toc-text">Scale out the app horizontally</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Fast-startup-and-shutdown"><span class="toc-number">9.</span> <span class="toc-text">Fast startup and shutdown</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Keep-development-staging-and-production-as-similar-as-possible"><span class="toc-number">10.</span> <span class="toc-text">Keep development, staging, and production as similar as possible</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Logs-goes-to-stdout"><span class="toc-number">11.</span> <span class="toc-text">Logs goes to stdout</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Admin-processes"><span class="toc-number">12.</span> <span class="toc-text">Admin processes</span></a></li></ol>
+            <div>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#One-codebase-per-app-multiple-deployments"><span class="toc-number">1.</span> <span class="toc-text">One codebase per app, multiple deployments</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Declare-and-isolate-dependencies"><span class="toc-number">2.</span> <span class="toc-text">Declare and isolate dependencies</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Store-the-config-in-the-environment"><span class="toc-number">3.</span> <span class="toc-text">Store the config in the environment</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Swappable-local-and-third-party-services"><span class="toc-number">4.</span> <span class="toc-text">Swappable local and third party services</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Build-and-runtime"><span class="toc-number">5.</span> <span class="toc-text">Build and runtime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Execute-the-app-as-share-nothing-stateless-processes"><span class="toc-number">6.</span> <span class="toc-text">Execute the app as share-nothing stateless processes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Export-services-via-port-binding"><span class="toc-number">7.</span> <span class="toc-text">Export services via port binding</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scale-out-the-app-horizontally"><span class="toc-number">8.</span> <span class="toc-text">Scale out the app horizontally</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Fast-startup-and-shutdown"><span class="toc-number">9.</span> <span class="toc-text">Fast startup and shutdown</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Keep-development-staging-and-production-as-similar-as-possible"><span class="toc-number">10.</span> <span class="toc-text">Keep development, staging, and production as similar as possible</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Logs-goes-to-stdout"><span class="toc-number">11.</span> <span class="toc-text">Logs goes to stdout</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Admin-processes"><span class="toc-number">12.</span> <span class="toc-text">Admin processes</span></a></li></ol>
+            </div>
 
             <!-- 300x600 -->
             <!---->
@@ -580,6 +596,11 @@ The Twelve steps are a compilation of guidelines to ensure apps can scale up wit
             <div class="hidden-mobile-down">
               <!-- last working ads -->
               <!-- <script data-cfasync="false" type="text/javascript" src="//www.eboundservices.com/ads/dfp/160x600_responsive.js"></script> -->
+
+              <a href="https://gum.co/dsajs" target="_blank">
+                <!-- <img src="/images/data-structure-algorithms-javascript-presell.jpg" alt="Data Structure and Algorithms in JavaScript eBook"> -->
+                <img src="/images/data-structure-algorithms-banner.jpg" alt="Data Structure and Algorithms in JavaScript eBook">
+              </a>
             </div>
           
         </div>
@@ -618,8 +639,8 @@ The Twelve steps are a compilation of guidelines to ensure apps can scale up wit
       <div class="container">
         <div class="p-y-2">
           &copy; 2019 <a href="http://adrianmejia.com">Adrian Mejia</a>
-          <span class="muted m-x-4" title="Tue Jan 22 2019 16:44:53 GMT-0500 (Eastern Standard Time)">
-            v.plr5qt
+          <span class="muted m-x-4" title="Thu Feb 21 2019 19:18:42 GMT-0500 (Eastern Standard Time)">
+            v.pnawv6
           </span>
         </div>
       </div>
@@ -637,6 +658,9 @@ The Twelve steps are a compilation of guidelines to ensure apps can scale up wit
     
 
     
+      <script src="https://gumroad.com/js/gumroad.js"></script>
+
+      <!-- adthis -->
       <script type="text/javascript">
         var addthis_config = {
           data_ga_property: 'UA-24183929-4',
@@ -644,6 +668,7 @@ The Twelve steps are a compilation of guidelines to ensure apps can scale up wit
         };
       </script>
       <script async defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-579cb31b46e2f7e6"></script>
+
       <script src="/js/posts.js"></script>    
   </body>
 </html>

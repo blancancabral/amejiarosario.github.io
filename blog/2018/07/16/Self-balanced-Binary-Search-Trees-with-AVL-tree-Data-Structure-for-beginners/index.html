@@ -104,6 +104,8 @@ ga('send', 'pageview');
               
                 <a href="/#trending-posts" class="animation--radial-out" id="Trending" onclick="track('/#trending-posts', 'menu', true)">Trending</a>
               
+                <a href="/#popular-posts" class="animation--radial-out" id="Popular" onclick="track('/#popular-posts', 'menu', true)">Popular</a>
+              
                 <a href="/#about" class="animation--radial-out" id="About" onclick="track('/#about', 'menu', true)">About</a>
               
                 <a href="/blog" class="animation--radial-out" id="Blog" onclick="track('/blog', 'menu', true)">Blog</a>
@@ -232,6 +234,8 @@ ga('send', 'pageview');
         
           <a href="/#trending-posts" class="animation--underline-from-center">Trending</a>
         
+          <a href="/#popular-posts" class="animation--underline-from-center">Popular</a>
+        
           <a href="/#about" class="animation--underline-from-center">About</a>
         
           <a href="/blog" class="animation--underline-from-center">Blog</a>
@@ -293,14 +297,14 @@ Binary Search Trees are used for many things that we might not be aware of. For 
     <div class="muted">
       <span title="Last time this post was updated">
         <i class="fa fa-calendar" aria-hidden="true"></i>
-        Last update
+        Last updated
         <time datetime="2018-07-16T19:43:11.000Z" itemprop="dateUpdated">July 16th 2018</time>
       </span>
 
       
         <span class="m-x-2" title="Pageviews">
           <i class="fa fa-eye" aria-hidden="true"></i>
-          0.9k
+          4.1k
         </span>
       
 
@@ -554,7 +558,7 @@ You can <code>star</code> it to keep it handy.</p>
       </div>
 
       <!-- after post -->
-      <div>
+      <div class="hidden-mobile-down">
         <h3>Now, your turn!</h3>
         Thanks for reading this far. Here are some things you can do next:
         <ul>
@@ -574,6 +578,13 @@ You can <code>star</code> it to keep it handy.</p>
             <a target="_blank" href="https://www.patreon.com/amejiarosario">Patreon</a>.
           </li>
         </ul>
+      </div>
+
+      <div class="hidden-mobile-up">
+        <a href="https://gum.co/dsajs">
+          <!-- <img src="/images/data-structure-algorithms-javascript-presell.jpg" alt="Data Structure and Algorithms in JavaScript eBook"> -->
+          <img src="/images/data-structure-algorithms-banner.jpg" alt="Data Structure and Algorithms in JavaScript eBook">
+        </a>
       </div>
 
       <!-- Next and previous posts -->
@@ -641,7 +652,10 @@ You can <code>star</code> it to keep it handy.</p>
           <!-- Adrian Mejia Bio -->
           <section class="bio-box">
   <img class="m-a-1 not-scaled" src="/images/adrianmejia-small.png" alt="Adrian Mejia">
-  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston. Currently working at Cisco as a Software Engineer. Adrian enjoys writing posts about programming and technology. Also, he likes to travel ✈️ and biking 🚴‍. Find our more <a href="/#about">here</a>.</p>
+  <p class="p-x-1 muted">Adrian Mejia is a full-stack web developer located in Boston.
+    Currently working at Cisco as a Software Engineer.
+    Adrian enjoys writing posts about programming and technology.
+    Also, he likes to travel ✈️ and biking 🚴‍. Find out more <a href="/#about">here</a>.</p>
 </section>
 
 
@@ -841,7 +855,9 @@ You can <code>star</code> it to keep it handy.</p>
 
           
             <h3 class="toc-title">Contents</h3>
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Balanced-vs-Unbalanced-Binary-Search-Tree"><span class="toc-number">1.</span> <span class="toc-text">Balanced vs Unbalanced Binary Search Tree</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#When-a-tree-is-balanced-non-balanced"><span class="toc-number">2.</span> <span class="toc-text">When a tree is balanced/non-balanced?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tree-rotations"><span class="toc-number">3.</span> <span class="toc-text">Tree rotations</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Left-Rotation"><span class="toc-number">3.1.</span> <span class="toc-text">Left Rotation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Right-Rotation"><span class="toc-number">3.2.</span> <span class="toc-text">Right Rotation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Left-Right-Rotation"><span class="toc-number">3.3.</span> <span class="toc-text">Left-Right Rotation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Right-Left-Rotation"><span class="toc-number">3.4.</span> <span class="toc-text">Right-Left Rotation</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AVL-Tree-Overview"><span class="toc-number">4.</span> <span class="toc-text">AVL Tree Overview</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tree-with-1-node"><span class="toc-number">4.1.</span> <span class="toc-text">Tree with 1 node</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tree-with-multiple-nodes"><span class="toc-number">4.2.</span> <span class="toc-text">Tree with multiple nodes</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AVL-Tree-Insertion-and-Deletion"><span class="toc-number">5.</span> <span class="toc-text">AVL Tree Insertion and Deletion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Summary"><span class="toc-number">6.</span> <span class="toc-text">Summary</span></a></li></ol>
+            <div>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Balanced-vs-Unbalanced-Binary-Search-Tree"><span class="toc-number">1.</span> <span class="toc-text">Balanced vs Unbalanced Binary Search Tree</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#When-a-tree-is-balanced-non-balanced"><span class="toc-number">2.</span> <span class="toc-text">When a tree is balanced/non-balanced?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tree-rotations"><span class="toc-number">3.</span> <span class="toc-text">Tree rotations</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Left-Rotation"><span class="toc-number">3.1.</span> <span class="toc-text">Left Rotation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Right-Rotation"><span class="toc-number">3.2.</span> <span class="toc-text">Right Rotation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Left-Right-Rotation"><span class="toc-number">3.3.</span> <span class="toc-text">Left-Right Rotation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Right-Left-Rotation"><span class="toc-number">3.4.</span> <span class="toc-text">Right-Left Rotation</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AVL-Tree-Overview"><span class="toc-number">4.</span> <span class="toc-text">AVL Tree Overview</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tree-with-1-node"><span class="toc-number">4.1.</span> <span class="toc-text">Tree with 1 node</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tree-with-multiple-nodes"><span class="toc-number">4.2.</span> <span class="toc-text">Tree with multiple nodes</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AVL-Tree-Insertion-and-Deletion"><span class="toc-number">5.</span> <span class="toc-text">AVL Tree Insertion and Deletion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Summary"><span class="toc-number">6.</span> <span class="toc-text">Summary</span></a></li></ol>
+            </div>
 
             <!-- 300x600 -->
             <!---->
@@ -849,6 +865,11 @@ You can <code>star</code> it to keep it handy.</p>
             <div class="hidden-mobile-down">
               <!-- last working ads -->
               <!-- <script data-cfasync="false" type="text/javascript" src="//www.eboundservices.com/ads/dfp/160x600_responsive.js"></script> -->
+
+              <a href="https://gum.co/dsajs" target="_blank">
+                <!-- <img src="/images/data-structure-algorithms-javascript-presell.jpg" alt="Data Structure and Algorithms in JavaScript eBook"> -->
+                <img src="/images/data-structure-algorithms-banner.jpg" alt="Data Structure and Algorithms in JavaScript eBook">
+              </a>
             </div>
           
         </div>
@@ -887,8 +908,8 @@ You can <code>star</code> it to keep it handy.</p>
       <div class="container">
         <div class="p-y-2">
           &copy; 2019 <a href="http://adrianmejia.com">Adrian Mejia</a>
-          <span class="muted m-x-4" title="Tue Jan 22 2019 16:44:53 GMT-0500 (Eastern Standard Time)">
-            v.plr5qt
+          <span class="muted m-x-4" title="Thu Feb 21 2019 19:18:42 GMT-0500 (Eastern Standard Time)">
+            v.pnawv6
           </span>
         </div>
       </div>
@@ -906,6 +927,9 @@ You can <code>star</code> it to keep it handy.</p>
     
 
     
+      <script src="https://gumroad.com/js/gumroad.js"></script>
+
+      <!-- adthis -->
       <script type="text/javascript">
         var addthis_config = {
           data_ga_property: 'UA-24183929-4',
@@ -913,6 +937,7 @@ You can <code>star</code> it to keep it handy.</p>
         };
       </script>
       <script async defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-579cb31b46e2f7e6"></script>
+
       <script src="/js/posts.js"></script>    
   </body>
 </html>
